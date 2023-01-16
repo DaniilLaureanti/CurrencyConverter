@@ -1,11 +1,9 @@
 package com.laureanti.data.network.model
 
-import com.google.gson.JsonObject
 import com.google.gson.annotations.Expose
 import com.google.gson.annotations.SerializedName
 
-
-data class CurrencyDto(
+data class ConvertCurrencyDto(
 
     @SerializedName("motd")
     @Expose
@@ -15,16 +13,24 @@ data class CurrencyDto(
     @Expose
     var success: Boolean? = null,
 
-    @SerializedName("base")
+    @SerializedName("query")
     @Expose
-    var base: String? = null,
+    var queryDto: QueryDto? = QueryDto(),
+
+    @SerializedName("info")
+    @Expose
+    var infoDto: InfoDto? = InfoDto(),
+
+    @SerializedName("historical")
+    @Expose
+    var historical: Boolean? = null,
 
     @SerializedName("date")
     @Expose
     var date: String? = null,
 
-    @SerializedName("rates")
+    @SerializedName("result")
     @Expose
-    val jsonRates: JsonObject? = null
+    var result: Double? = null
 
 )
