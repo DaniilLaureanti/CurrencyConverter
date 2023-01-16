@@ -1,11 +1,16 @@
 package com.laureanti.data.network.model
 
-import com.google.gson.JsonObject
 import com.google.gson.annotations.Expose
 import com.google.gson.annotations.SerializedName
 
-data class CurrencyInfoJsonContainerDto(
-    @SerializedName("rates")
+data class MotdDto(
+
+    @SerializedName("msg")
     @Expose
-    val json: JsonObject? = null
+    var msg: String? = null,
+
+    @SerializedName("url")
+    @Expose
+    var url: String? = null
+
 )
