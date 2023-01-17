@@ -1,8 +1,7 @@
-package com.laureanti.data.api
+package com.laureanti.data.network.api
 
 import com.laureanti.data.network.model.ConvertCurrencyDto
 import com.laureanti.data.network.model.CurrencyDto
-import com.squareup.picasso.Picasso.LoadedFrom
 import retrofit2.http.GET
 import retrofit2.http.Query
 

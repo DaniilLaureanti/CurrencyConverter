@@ -1,4 +1,4 @@
-package com.laureanti.data.api
+package com.laureanti.data.network.api
 
 import retrofit2.Retrofit
 import retrofit2.converter.gson.GsonConverterFactory
