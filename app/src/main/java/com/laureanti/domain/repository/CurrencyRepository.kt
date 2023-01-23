@@ -8,4 +8,10 @@ interface CurrencyRepository {
     suspend fun getAllCurrencies(): List<Currency>
 
     suspend fun getConvertCurrency(fromSymbol: String, to: String, amount: Int): ConvertCurrency
+
+    suspend fun addCurrency(currency: Currency)
+
+    suspend fun removeCurrency(currency: Currency)
+
+    suspend fun getSavedCurrencies(): List<Currency>
 }

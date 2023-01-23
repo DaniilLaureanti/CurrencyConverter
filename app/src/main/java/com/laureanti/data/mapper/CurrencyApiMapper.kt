@@ -5,7 +5,7 @@ import com.laureanti.data.network.model.CurrencyDto
 import com.laureanti.domain.entity.ConvertCurrency
 import com.laureanti.domain.entity.Currency
 
-class CurrencyMapper {
+class CurrencyApiMapper {
 
     fun mapDtoToEntity(convertCurrencyDto: ConvertCurrencyDto) = convertCurrencyDto.result?.let {
         ConvertCurrency(
